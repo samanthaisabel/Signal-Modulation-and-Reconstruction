@@ -20,7 +20,7 @@ This repository provides a technical validation of the end-to-end signal chain. 
 ---
 
 ## 📋 Table of Contents
-* [FM Modulation](#fm-modulation)
+* [Frequency Modulation](#frequency-modulation)
 * [FM Demodulation](#fm-demodulation)
 * [Sampling & Reconstruction](#sampling--reconstruction)
 * [PCM Encoding](#pcm-encoding)
@@ -29,7 +29,7 @@ This repository provides a technical validation of the end-to-end signal chain. 
 
 ---
 
-## FM Modulation
+## Frequency Modulation
 > *Analysis of frequency deviation and carrier stability.*
 
 <details>
@@ -47,6 +47,17 @@ Exploration of FM signal generation where carrier frequency shifts in proportion
 *   **Constant Amplitude:** Confirmed carrier amplitude remains static during modulation.
 *   **Deviation:** Proved that increasing modulating amplitude directly increases frequency deviation.
 *   **Carson’s Rule:** Measured bandwidth aligned with theoretical predictions.
+
+### Laboratory Observations
+<p align="center">
+  <img src="assets/Frequency%20Modulation/2kHz_squarewave_message_osc.jpg" width="45%">
+  <img src="assets/Frequency%20Modulation/2kHz_squarewave_message.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="assets/Frequency%20Modulation/FM_sinewave_osc.jpg" width="45%">
+  <img src="assets/Frequency%20Modulation/FM_sinewave_setup.jpg" width="45%">
+</p>
 
 ### Takeaways
 Successfully validated that information in FM is stored in frequency shifts, providing high resistance to amplitude noise.
@@ -76,6 +87,20 @@ The process of converting frequency variations back into original voltage signal
 *   **Foster-Seeley:** Improved accuracy via phase-relationship detection.
 *   **PLL Demodulator:** Provided the most stable and clean recovered signal.
 
+### Laboratory Observations
+<p align="center">
+  <img src="assets/FM%20Demodulation/Transmitting_Recovering_Sinewave.jpg" width="45%">
+  <img src="assets/FM%20Demodulation/Recovering_Speech_Osc.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="assets/FM%20Demodulation/Transmitting_Recovering_Speech_Setup.jpg" width="45%">
+</p>
+
+<p align="center">
+  <a href="assets/FM%20Demodulation/Speech_Output.mp4"><strong>🎥 Watch: Speech Output Recovery Demo</strong></a>
+</p>
+
 ### Takeaways
 Identified the **Phase-Locked Loop (PLL)** as the superior method for stable, low-distortion signal recovery.
 
@@ -104,6 +129,31 @@ Converting continuous analog signals into discrete-time samples for digital proc
 *   **Aliasing:** Observed overlapping frequencies and distortion when undersampled.
 *   **Reconstruction:** Successfully used an LPF to smooth samples back to analog.
 
+### Laboratory Observations
+<p align="center">
+  <img src="assets/Sampling%20and%20Reconstruction/Sampling_Simple_Osc.jpg" width="45%">
+  <img src="assets/Sampling%20and%20Reconstruction/Sampling_Simple_Setup.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="assets/Sampling%20and%20Reconstruction/Reconstructing_Message_Osc.jpg" width="45%">
+  <img src="assets/Sampling%20and%20Reconstruction/Reconstructing_Message_Setup.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="assets/Sampling%20and%20Reconstruction/New_Sampled_Osc.jpg" width="45%">
+  <img src="assets/Sampling%20and%20Reconstruction/New_Sampled_Setup.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="assets/Sampling%20and%20Reconstruction/Aliasing_Osc.jpg" width="45%">
+  <img src="assets/Sampling%20and%20Reconstruction/Output_Final.jpg" width="45%">
+</p>
+
+<p align="center">
+  <a href="assets/Sampling%20and%20Reconstruction/Aliasing_Output.mp4"><strong>🎥 Watch: Aliasing Waveform Output</strong></a>
+</p>
+
 ### Takeaways
 Verified that the sampling rate and output filtering are the two most critical factors in digital signal integrity.
 
@@ -125,12 +175,31 @@ Pulse Code Modulation (PCM) converts analog waveforms into a serial binary bitst
 ### Equipment
 *   **Emona Telecoms-Trainer 101**
 *   **Dual-channel 20MHz oscilloscope**
-*   Emona 101 oscilloscope leads
 
 ### Experimental Results
 *   **Quantization:** Observed the "staircase" approximation of the input signal.
 *   **Resolution:** Verified that more bits per sample reduce quantization error.
 *   **Encoding:** Successfully mapped analog samples to binary code.
+
+### Laboratory Observations
+<p align="center">
+  <img src="assets/PCM%20Encoding/PCM_Static_DC_Diff.jpg" width="45%">
+  <img src="assets/PCM%20Encoding/PCM_Static_DC_Setup.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="assets/PCM%20Encoding/PCM_Output_5.8mV.jpg" width="30%">
+  <img src="assets/PCM%20Encoding/PCM_Output_200mV.jpg" width="30%">
+  <img src="assets/PCM%20Encoding/PCM_Output_Module.jpg" width="30%">
+</p>
+
+<p align="center">
+  <img src="assets/PCM%20Encoding/PCM_End_Output.jpg" width="45%">
+</p>
+
+<p align="center">
+  <a href="assets/PCM%20Encoding/PCM_Output_Video.mp4"><strong>🎥 Watch: PCM Output Signal Demo</strong></a>
+</p>
 
 ### Takeaways
 Learned the trade-off between signal quality (bits) and transmission bandwidth.
@@ -153,12 +222,27 @@ The inverse of encoding: converting binary logic back into quantized voltages an
 ### Equipment
 *   **Emona Telecoms-Trainer 101**
 *   **Dual-channel 20MHz oscilloscope**
-*   Assorted Emona patch leads
 
 ### Experimental Results
 *   **Reconstruction:** Binary inputs were converted back to a staircase waveform.
 *   **Recovery:** Low-pass filtering successfully removed sampling noise.
 *   **Fidelity:** Recovered waveform closely matched the original analog input.
+
+### Laboratory Observations
+<p align="center">
+  <img src="assets/PCM%20Decoding/Setup_PCM_Encoder.jpg" width="45%">
+  <img src="assets/PCM%20Decoding/Part_A.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="assets/PCM%20Decoding/Part_B_16.jpg" width="30%">
+  <img src="assets/PCM%20Decoding/Part_B_25.jpg" width="30%">
+  <img src="assets/PCM%20Decoding/Part_C_NoSpeech.jpg" width="30%">
+</p>
+
+<p align="center">
+  <img src="assets/PCM%20Decoding/Part_D.jpg" width="45%">
+</p>
 
 ### Takeaways
 Confirmed that digital-to-analog conversion requires precise filtering to restore signal smoothness.
@@ -181,12 +265,26 @@ Analysis of how bandwidth-limited channels distort digital pulses and techniques
 ### Equipment
 *   **Emona Telecoms-Trainer 101**
 *   **Dual-channel 20MHz oscilloscope**
-*   Assorted Emona patch leads
 
 ### Experimental Results
 *   **Distortion:** Observed "rounding" of digital pulses and signal overlapping (ISI).
 *   **ISI Effects:** Overlapping between adjacent bits was identified as a source of bit errors.
-*   **Restoration:** Successfully used restoration filters to improve signal clarity and edge sharpness.
+*   **Restoration:** Successfully used restoration filters to improve signal clarity.
+
+### Laboratory Observations
+<p align="center">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part_A.jpg" width="30%">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part_B.jpg" width="30%">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part_C_2.jpg" width="30%">
+</p>
+
+<p align="center">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part_C_Final.jpg" width="45%">
+</p>
+
+<p align="center">
+  <a href="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Bandwidth_Output_Video.mp4"><strong>🎥 Watch: Bandwidth Restoration Demo</strong></a>
+</p>
 
 ### Takeaways
 Proved that bandwidth is a finite resource and restoration is necessary for high-speed data integrity.
