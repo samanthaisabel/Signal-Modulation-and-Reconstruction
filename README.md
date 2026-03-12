@@ -13,14 +13,14 @@
 
 ---
 
-## 🛠️ Technical Skillset
+### 🛠️ Technical Skillset
 *   **Analog & Recovery:** FM generation, deviation measurement, and **Phase-Locked Loop (PLL)** stabilization.
 *   **Digital & Sampling:** Pulse Code Modulation (PCM), quantization, and **Nyquist Sampling** validation.
 *   **Signal Integrity:** Bandwidth-limited channel analysis and **Intersymbol Interference (ISI)** mitigation.
 
 ---
 
-## 🔬 System Analysis & Key Findings
+### 🔬 System Analysis & Key Findings
 *   **FM Noise Immunity:** Verified that frequency-based modulation is significantly more resilient to amplitude noise than AM.
 *   **PLL Stability:** Confirmed that PLL demodulation provides the most reliable FM recovery in interference-heavy environments.
 *   **Nyquist Criterion:** Experimentally validated that $f_s \geq 2f_{max}$ is critical for alias-free digital reconstruction.
@@ -28,7 +28,7 @@
 
 ---
 
-## Table of Contents
+## 📋 Table of Contents
 * [Frequency Modulation](#frequency-modulation)
 * [FM Demodulation](#fm-demodulation)
 * [Sampling & Reconstruction](#sampling--reconstruction)
@@ -339,18 +339,21 @@ Proper filtering and restoration are necessary to maintain reliable communicatio
 
 ---
 
----
-
-## Analysis
+### 💡 Key Findings
 *   **System-Level Integration:** Successfully modeled the comprehensive transition between analog and digital communication domains, specifically the progression from Frequency Modulation (FM) to Pulse Code Modulation (PCM) signal reconstruction.
 *   **Empirical Validation of Theory:** Provided experimental verification for core electromagnetic and signal processing theorems, including Carson’s Rule for bandwidth estimation, the Nyquist-Shannon sampling criterion, and the closed-loop frequency tracking characteristics of Phase-Locked Loops (PLL).
 *   **Operational Optimization:** Analyzed the critical engineering trade-offs inherent in modern telecommunications, particularly the balance between signal-to-noise ratio (SNR), spectral efficiency, and quantization resolution.
 
 ---
 
-## Conclusion
+### 📈 Final Conclusion
 This series of laboratories successfully validated the foundational principles of modern communication theory through the practical application of the **Emona Telecoms-Trainer 101** platform. By achieving high-fidelity signal recovery in both analog frequency modulation and digital pulse code modulation, the data reinforced the necessity of adhering to sampling limits and filtering requirements. Ultimately, these results provide a concrete bridge between theoretical mathematical models and the physical constraints of contemporary hardware systems.
 
 ---
+
+### 🛠️ Summary
+*   **Platform:** Emona Telecoms-Trainer 101 (Hardware-Bench)
+*   **Measurement:** Dual-Channel 20MHz Oscilloscope & Signal Analyzer
+*   **Verification:** Captured data validated against hardware-accurate noise and bandwidth constraints.
 
 <p align="right"><a href="#readme-top">Back to top ↑</a></p>
