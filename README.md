@@ -3,31 +3,23 @@
 > [!IMPORTANT]
 > `Field: RF Engineering` • `Hardware: Emona Telecoms-Trainer 101`
 
-# Communication Systems
-> Frequency Modulation • FM Demodulation • Sampling and Reconstruction • PCM Encoding • PCM Decoding • Bandwidth limiting and restoring digital signals
-> 
-> **Executive Summary:** Experimental evaluation of the communication signal chain, transitioning from analog modulation to digital reconstruction. This repository presents a systematic analysis of:
-> * **Frequency Modulation:** Characteristics of generation, deviation limits, and PLL-stabilized recovery.
-> * **Digital Communication:** Practical application of Sampling Theory, PCM protocols, and aliasing mitigation.
-> * **Signal Integrity:** Analysis of bandwidth-limited channels and Intersymbol Interference (ISI) management.
-> 
-> *All data validated via real-time oscilloscope measurements on the Emona Trainer 101 platform.*
+# 📡 Communication Systems: Analog & Digital Signal Analysis
+> **An experimental evaluation of frequency modulation, PCM encoding, and signal reconstruction, validated via real-time oscilloscope analysis.**
 
 ---
 
-## Technical Skills Demonstrated
-*   **Analog Communication:** FM generation, frequency deviation measurement, sideband, and bandwidth analysis.
-*   **Signal Recovery:** Slope detector demodulation, Foster-Seeley discriminator analysis, and **Phase-Locked Loop (PLL)** stabilization.
-*   **Digital Communication:** Pulse Code Modulation (PCM), quantization, binary encoding, and signal reconstruction.
-*   **Signal Integrity:** Nyquist sampling validation, aliasing observation, and **Intersymbol Interference (ISI)** mitigation.
+## 🛠️ Technical Skillset
+*   **Analog & Recovery:** FM generation, deviation measurement, and **Phase-Locked Loop (PLL)** stabilization.
+*   **Digital & Sampling:** Pulse Code Modulation (PCM), quantization, and **Nyquist Sampling** validation.
+*   **Signal Integrity:** Bandwidth-limited channel analysis and **Intersymbol Interference (ISI)** mitigation.
 
 ---
 
-## System Analysis
-*   **FM Noise Immunity:** Verified that frequency-based modulation is significantly less sensitive to amplitude noise than AM systems.
-*   **PLL Signal Recovery:** Confirmed that PLL demodulation provides the most stable and accurate FM signal recovery in interference-heavy environments.
-*   **Nyquist Sampling Theorem:** Experimentally validated that the proper sampling rate ($f_s \geq 2f_{max}$) prevents aliasing and ensures accurate reconstruction.
-*   **Digital Trade-offs:** Observed how PCM bit resolution directly affects signal fidelity versus bandwidth requirements.
+## 🔬 System Analysis & Key Findings
+*   **FM Noise Immunity:** Verified that frequency-based modulation is significantly more resilient to amplitude noise than AM.
+*   **PLL Stability:** Confirmed that PLL demodulation provides the most reliable FM recovery in interference-heavy environments.
+*   **Nyquist Criterion:** Experimentally validated that $f_s \geq 2f_{max}$ is critical for alias-free digital reconstruction.
+*   **Digital Trade-offs:** Observed the direct correlation between PCM bit-depth, signal fidelity, and bandwidth overhead.
 
 ---
 
