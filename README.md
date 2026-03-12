@@ -53,6 +53,14 @@
 ### Introduction
 Focuses on the generation of an FM signal using sinusoidal modulating signals and high-frequency carriers. Information is stored in frequency shifts rather than amplitude.
 
+### Block Diagram
+<details>
+<summary><b>View FM System Configuration</b></summary>
+<p align="center">
+  <img src="assets/Frequency%20Modulation/Block%20Diagram%20(FM).png" height="250">
+</p>
+</details>
+
 ### Equipment
 *   **Emona Telecoms-Trainer 101** (plus power-pack)
 *   **Dual-channel 20MHz oscilloscope**
@@ -99,6 +107,14 @@ The experiment confirmed that FM bandwidth is determined by the modulation index
 
 ### Introduction
 The process of converting frequency variations back into original voltage signals. This study evaluates different demodulator circuit topologies and their performance under noise.
+
+### Block Diagram
+<details>
+<summary><b>View FM Demodulator Configuration</b></summary>
+<p align="center">
+  <img src="assets/FM%20Demodulation/Block%20Diagram%20(FM%20Demodulator).png" height="250">
+</p>
+</details>
 
 ### Equipment
 *   **Emona Telecoms-Trainer 101**
@@ -148,6 +164,16 @@ FM demodulation effectively translates frequency changes back to original messag
 
 ### Introduction
 Focuses on the conversion of analog signals into discrete-time signals. This process is fundamental for digital processing and transmission.
+
+### Block Diagram
+<details>
+<summary><b>View Sampling and Reconstruction Configuration</b></summary>
+<p align="center">
+  <img src="assets/Sampling%20and%20Reconstruction/Block%20Diagram%201.png" height="250">
+  <img src="assets/Sampling%20and%20Reconstruction/Block%20Diagram%202.png" height="250">
+</p>
+</details>
+
 
 ### Equipment
 *   **Emona Telecoms-Trainer 101**
