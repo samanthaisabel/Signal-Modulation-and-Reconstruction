@@ -7,9 +7,9 @@
 
 > [!IMPORTANT]
 > - **Domain:** `RF & Wireless Communications`
-> - **Platform:** `Emona Telecoms-Trainer 101`
+> - **Platform:** `Emona Telecoms-Trainer 101` • `net*TIMS`
 > - **Methods:** `FM` • `PLL` • `Sampling & Reconstruction` • `PCM` • `Bandwidth Limiting`
-> - **Core Objective:** Evaluate analog and digital processing techniques to determine performance regarding noise immunity and signal reconstruction accuracy.
+> - **Core Objective:** Evaluate analog and digital processing techniques using the Telecommunications Instructional Modeling System (TIMS) to determine performance regarding noise immunity and signal reconstruction accuracy.
 
 ---
 
@@ -59,7 +59,7 @@ Focuses on the generation of an FM signal using sinusoidal modulating signals an
 *   Emona 101 oscilloscope leads & assorted patch leads
 
 ### Experimental Results
-*   **Frequency Deviation:** Confirmed that increasing modulating signal amplitude directly increases carrier frequency deviation.
+*   **Frequency Deviation:** Confirmed that increasing the modulating signal amplitude directly increases carrier frequency deviation.
 *   **Constant Amplitude:** Verified that carrier amplitude remains constant throughout the modulation process.
 *   **Modulation Index ($\beta$):** Observed Narrowband FM characteristics for $\beta < 1$ and Sideband expansion (Wideband FM) for $\beta > 1$.
 *   **Bandwidth Validation:** Measured bandwidth via spectrum analyzer closely matched theoretical **Carson’s Rule** calculations.
@@ -101,7 +101,7 @@ The experiment confirmed that FM bandwidth is determined by the modulation index
 The process of converting frequency variations back into original voltage signals. This study evaluates different demodulator circuit topologies and their performance under noise.
 
 ### Equipment
-*   **Emona Telecoms-Trainer 101** suite
+*   **Emona Telecoms-Trainer 101**
 *   **Dual-channel 20MHz oscilloscope**
 *   **Headphones** (for audio signal validation)
 
@@ -111,7 +111,7 @@ The process of converting frequency variations back into original voltage signal
 *   **PLL Stability:** The **Phase-Locked Loop (PLL)** demodulator provided the most stable and clean signal recovery, maintaining lock even under interference.
 
 ### Takeaways
-The PLL demodulator is superior for modern systems due to its ability to lock onto frequencies and reject amplitude noise. Proper circuit design is essential for minimizing non-ideal component effects.
+The PLL demodulator is superior for modern systems due to its ability to lock onto frequencies and reject amplitude noise. Proper circuit design is essential for minimizing the effects of nonideal components.
 
 ### Summary
 FM demodulation effectively translates frequency changes back to original messages. The choice of demodulator directly impacts the stability and clarity of the recovered signal.
@@ -263,11 +263,10 @@ PCM encoding successfully digitizes analog signals, forming the hardware foundat
 <summary><b>View Details</b></summary>
 
 ### Introduction
-The process of converting digital binary data back into an analog signal, essential for recovering original transmitted info in digital receivers.
+The process of converting digital binary data back into an analog signal is essential for recovering the original transmitted information in digital receivers.
 
-### Equipment
-*   **Emona Telecoms-Trainer 101** suite
-*   **Dual-channel 20MHz oscilloscope**
+### Platform
+*   **net*TIMS**
 
 ### Experimental Results
 *   **Binary Recovery:** Successfully converted binary data back into quantized amplitude levels.
@@ -286,18 +285,12 @@ PCM decoding successfully restores analog information, completing the digital-to
 <summary><b>Laboratory Documentation</b></summary>
 
 <p align="center">
-  <img src="assets/PCM%20Decoding/Setting%20up%20the%20PCM%20encoder.jpg" height="250">
-  <img src="assets/PCM%20Decoding/Part%20A.png" height="250">
+  <img src="assets/PCM%20Decoding/Exp13_A.png" height="250">
+  <img src="assets/PCM%20Decoding/Exp13_B.png" height="250">
 </p>
 
 <p align="center">
-  <img src="assets/PCM%20Decoding/Part%20B%20no%2016.png" height="250">
-  <img src="assets/PCM%20Decoding/Part%20B%20no%2025.png" height="250">
-</p>
-
-<p align="center">
-  <img src="assets/PCM%20Decoding/Part%20C%20(no%20speech).png" height="250">
-  <img src="assets/PCM%20Decoding/Part%20D.png" height="250">
+  <img src="assets/PCM%20Decoding/Exp13_D.png" height="250">
 </p>
 
 </details>
@@ -315,9 +308,8 @@ PCM decoding successfully restores analog information, completing the digital-to
 ### Introduction
 Analysis of bandwidth limitation effects on digital signals, where restricted channels cause pulse distortion and rounding.
 
-### Equipment
-*   **Emona Telecoms-Trainer 101** suite
-*   **Dual-channel 20MHz oscilloscope**
+### Platform
+*   **net*TIMS**
 
 ### Experimental Results
 *   **Distortion:** Observed digital pulses becoming rounded after passing through a bandwidth-limited channel.
@@ -336,13 +328,23 @@ Proper filtering and restoration are necessary to maintain reliable communicatio
 <summary><b>Laboratory Documentation</b></summary>
 
 <p align="center">
-  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part%20A.png" height="250">
-  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part%20B.png" height="250">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_A_1.png" height="250">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_A_step13.png" height="250">
 </p>
 
 <p align="center">
-  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part%20C%20(2).png" height="250">
-  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Part%20C.png" height="250">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_B_1.png" height="250">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_B_step25.png" height="250">
+</p>
+
+<p align="center">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_B_step29.png" height="250">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_B_step31.png" height="250">
+</p>
+
+<p align="center">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_C_step36.png" height="250">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Exp14_C_step40.png" height="250">
 </p>
 
 </details>
@@ -366,7 +368,7 @@ This series of laboratories successfully validated the foundational principles o
 
 <a name="summary"></a>
 ### 🛠️ Summary
-*   **Platform:** Emona Telecoms-Trainer 101 (Hardware-Bench)
+*   **Platform:** Emona Telecoms-Trainer 101 & Net-TIMS
 *   **Measurement:** Dual-Channel 20MHz Oscilloscope & Signal Analyzer
 *   **Verification:** Captured data validated against hardware-accurate noise and bandwidth constraints.
 
