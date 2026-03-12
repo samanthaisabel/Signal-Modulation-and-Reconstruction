@@ -29,15 +29,21 @@
 ---
 
 ## 📋 Table of Contents
-* [Frequency Modulation](#frequency-modulation)
-* [FM Demodulation](#fm-demodulation)
-* [Sampling & Reconstruction](#sampling--reconstruction)
-* [PCM Encoding](#pcm-encoding)
-* [PCM Decoding](#pcm-decoding)
-* [Bandwidth Limiting & Restoration](#bandwidth-limiting--restoration)
+&nbsp;&nbsp;&nbsp;&nbsp; [🔊 Frequency Modulation](#fm) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; [🔄 FM Demodulation](#fm-demod) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; [📉 Sampling & Reconstruction](#sampling) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; [🔢 PCM Encoding](#pcm-enc) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; [🔡 PCM Decoding](#pcm-dec) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; [🚫 Bandwidth Limiting & Restoration](#bw-limit)
+
+**Analysis & Footnotes** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [💡 Key Findings](#findings) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [📈 Final Conclusion](#conclusion) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [🛠️ Summary](#summary)
 
 ---
 
+<a name="fm"></a>
 ## Frequency Modulation
 > *Analysis of frequency deviation and carrier stability.*
 
@@ -84,6 +90,7 @@ The experiment confirmed that FM bandwidth is determined by the modulation index
 
 ---
 
+<a name="fm-demod"></a>
 ## FM Demodulation
 > *Comparative study of signal recovery and noise rejection.*
 
@@ -132,6 +139,7 @@ FM demodulation effectively translates frequency changes back to original messag
 
 ---
 
+<a name="sampling"></a>
 ## Sampling & Reconstruction
 > *Validation of the Nyquist-Shannon Theorem and signal recovery.*
 
@@ -192,6 +200,7 @@ The experiment validated the Nyquist Sampling Theorem, proving that accurate rec
 
 ---
 
+<a name="pcm-enc"></a>
 ## PCM Encoding
 > *Digitizing signals via sampling, quantization, and binary mapping.*
 
@@ -246,6 +255,7 @@ PCM encoding successfully digitizes analog signals, forming the hardware foundat
 
 ---
 
+<a name="pcm-dec"></a>
 ## PCM Decoding
 > *Recovering analog signals from digital binary data.*
 
@@ -295,6 +305,7 @@ PCM decoding successfully restores analog information, completing the digital-to
 
 ---
 
+<a name="bw-limit"></a>
 ## Bandwidth Limiting & Restoration
 > *Managing Intersymbol Interference (ISI) in restricted channels.*
 
@@ -339,6 +350,7 @@ Proper filtering and restoration are necessary to maintain reliable communicatio
 
 ---
 
+<a name="findings"></a>
 ### 💡 Key Findings
 *   **System-Level Integration:** Successfully modeled the comprehensive transition between analog and digital communication domains, specifically the progression from Frequency Modulation (FM) to Pulse Code Modulation (PCM) signal reconstruction.
 *   **Empirical Validation of Theory:** Provided experimental verification for core electromagnetic and signal processing theorems, including Carson’s Rule for bandwidth estimation, the Nyquist-Shannon sampling criterion, and the closed-loop frequency tracking characteristics of Phase-Locked Loops (PLL).
@@ -346,11 +358,13 @@ Proper filtering and restoration are necessary to maintain reliable communicatio
 
 ---
 
+<a name="conclusion"></a>
 ### 📈 Final Conclusion
 This series of laboratories successfully validated the foundational principles of modern communication theory through the practical application of the **Emona Telecoms-Trainer 101** platform. By achieving high-fidelity signal recovery in both analog frequency modulation and digital pulse code modulation, the data reinforced the necessity of adhering to sampling limits and filtering requirements. Ultimately, these results provide a concrete bridge between theoretical mathematical models and the physical constraints of contemporary hardware systems.
 
 ---
 
+<a name="summary"></a>
 ### 🛠️ Summary
 *   **Platform:** Emona Telecoms-Trainer 101 (Hardware-Bench)
 *   **Measurement:** Dual-Channel 20MHz Oscilloscope & Signal Analyzer
