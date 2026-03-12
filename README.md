@@ -13,7 +13,7 @@
 
 ---
 
-### 🛠️ Technical Skillset
+### 🛠️ Technical Skills
 *   **Analog & Recovery:** FM generation, deviation measurement, and **Phase-Locked Loop (PLL)** stabilization.
 *   **Digital & Sampling:** Pulse Code Modulation (PCM), quantization, and **Nyquist Sampling** validation.
 *   **Signal Integrity:** Bandwidth-limited channel analysis and **Intersymbol Interference (ISI)** mitigation.
@@ -37,11 +37,24 @@
 &nbsp;&nbsp;&nbsp;&nbsp; [🚫 Bandwidth Limiting & Restoration](#bw-limit)
 
 **Analysis & Footnotes** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [🎯 Objectives](#objectives) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [💡 Key Findings](#findings) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [📈 Final Conclusion](#conclusion) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [🛠️ Summary](#summary)
 
 ---
+<a name="objectives"></a>
+## 🎯 Objectives
+> *Evaluation of analog and digital communication systems using the **Emona Telecoms-Trainer 101** and **net*TIMS** platforms.*
+
+<details>
+<summary><b>View Objectives</b></summary>
+
+*   **Modulation Analysis:** Implement and validate **FM, PCM, and Digital Modulation (ASK/FSK/PSK)** schemes to analyze frequency deviation and carrier stability.
+*   **Signal Integrity & Recovery:** Assess **PLL demodulation**, **Nyquist-Shannon** sampling limits, and **Low-Pass Filtering** for accurate signal reconstruction.
+*   **Channel Constraints:** Quantify the effects of **Bandwidth Limiting** and **Intersymbol Interference (ISI)** on digital bitstream restoration.
+
+</details>
 
 <a name="fm"></a>
 ## 🔊 Frequency Modulation
@@ -422,7 +435,7 @@ This series of laboratories successfully validated the foundational principles o
 <a name="summary"></a>
 ### 🛠️ Summary
 *   **Platform:** Emona Telecoms-Trainer 101 & Net-TIMS
-*   **Measurement:** Dual-Channel 20MHz Oscilloscope & Signal Analyzer
+*   **Measurement:** Dual-Channel 20MHz Oscilloscope
 *   **Verification:** Captured data validated against hardware-accurate noise and bandwidth constraints.
 
 <p align="right"><a href="#readme-top">Back to top ↑</a></p>
