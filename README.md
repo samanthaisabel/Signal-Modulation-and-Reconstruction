@@ -1,10 +1,15 @@
 <a id="readme-top"></a>
 
-> [!IMPORTANT]
-> `Field: RF Engineering` • `Hardware: Emona Telecoms-Trainer 101`
-
 # 📡 Communication Systems: Analog & Digital Signal Analysis
 > **An experimental evaluation of frequency modulation, PCM encoding, and signal reconstruction, validated via real-time oscilloscope analysis.**
+
+---
+
+> [!IMPORTANT]
+> - **Domain:** `RF & Wireless Communications`
+> - **Platform:** `Emona Telecoms-Trainer 101`
+> - **Methods:** `FM` • `PLL` • `Sampling & Reconstruction` • `PCM` • `Bandwidth Limiting`
+> - **Core Objective:** Evaluate analog and digital processing techniques to determine performance regarding noise immunity and signal reconstruction accuracy.
 
 ---
 
