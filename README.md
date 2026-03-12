@@ -57,7 +57,7 @@ Focuses on the generation of an FM signal using sinusoidal modulating signals an
 <details>
 <summary><b>View FM System Configuration</b></summary>
 <p align="center">
-  <img src="assets/Frequency%20Modulation/Block%20Diagram%20(FM).png" height="250">
+  <img src="assets/Frequency%20Modulation/Block%20Diagram%20(FM).png" height="220">
 </p>
 </details>
 
@@ -112,7 +112,7 @@ The process of converting frequency variations back into original voltage signal
 <details>
 <summary><b>View FM Demodulator Configuration</b></summary>
 <p align="center">
-  <img src="assets/FM%20Demodulation/Block%20Diagram%20(FM%20Demodulator).png" height="250">
+  <img src="assets/FM%20Demodulation/Block%20Diagram%20(FM%20Demodulator).png" height="220">
 </p>
 </details>
 
@@ -169,8 +169,8 @@ Focuses on the conversion of analog signals into discrete-time signals. This pro
 <details>
 <summary><b>View Sampling and Reconstruction Configuration</b></summary>
 <p align="center">
-  <img src="assets/Sampling%20and%20Reconstruction/Block%20Diagram%201.png" height="250">
-  <img src="assets/Sampling%20and%20Reconstruction/Block%20Diagram%202.png" height="250">
+  <img src="assets/Sampling%20and%20Reconstruction/Block%20Diagram%201.png" height="220">
+  <img src="assets/Sampling%20and%20Reconstruction/Block%20Diagram%202.png" height="220">
 </p>
 </details>
 
@@ -236,6 +236,14 @@ The experiment validated the Nyquist Sampling Theorem, proving that accurate rec
 ### Introduction
 Pulse Code Modulation (PCM) encoding is a method used to digitally represent analog signals through sampling, quantization, and binary encoding.
 
+### Block Diagram
+<details>
+<summary><b>View PCM Encoding Configuration</b></summary>
+<p align="center">
+  <img src="assets/PCM%20Encoding/Block%20Diagram%20(PCM%20Encoding).png" height="220">
+</p>
+</details>
+
 ### Equipment
 *   **Emona Telecoms-Trainer 101** (plus power-pack)
 *   **Dual-channel 20MHz oscilloscope**
@@ -291,6 +299,14 @@ PCM encoding successfully digitizes analog signals, forming the hardware foundat
 ### Introduction
 The process of converting digital binary data back into an analog signal is essential for recovering the original transmitted information in digital receivers.
 
+### Block Diagram
+<details>
+<summary><b>View PCM Decoding Configuration</b></summary>
+<p align="center">
+  <img src="assets/PCM%20Decoding/Block%20Diagram%20(PCM%20Decoding).png" height="220">
+</p>
+</details>
+
 ### Platform
 *   **net*TIMS**
 
@@ -333,6 +349,17 @@ PCM decoding successfully restores analog information, completing the digital-to
 
 ### Introduction
 Analysis of bandwidth limitation effects on digital signals, where restricted channels cause pulse distortion and rounding.
+
+### Block Diagram
+<details>
+<summary><b>View Bandwidth Limiting & Restoration Configuration</b></summary>
+<p align="center">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Block%20Diagram%201.png" height="220">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Block%20Diagram%202.png" height="220">
+  <img src="assets/Bandwidth%20limiting%20and%20restoring%20digital%20signals/Block%20Diagram%203.png" height="220">
+</p>
+</details>
+
 
 ### Platform
 *   **net*TIMS**
