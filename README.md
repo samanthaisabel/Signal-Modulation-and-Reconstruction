@@ -44,7 +44,7 @@
 ---
 
 <a name="fm"></a>
-## Frequency Modulation
+## 🔊 Frequency Modulation
 > *Analysis of frequency deviation and carrier stability.*
 
 <details>
@@ -91,7 +91,7 @@ The experiment confirmed that FM bandwidth is determined by the modulation index
 ---
 
 <a name="fm-demod"></a>
-## FM Demodulation
+## 🔄 FM Demodulation
 > *Comparative study of signal recovery and noise rejection.*
 
 <details>
@@ -140,7 +140,7 @@ FM demodulation effectively translates frequency changes back to original messag
 ---
 
 <a name="sampling"></a>
-## Sampling & Reconstruction
+## 📉 Sampling & Reconstruction
 > *Validation of the Nyquist-Shannon Theorem and signal recovery.*
 
 <details>
@@ -201,7 +201,7 @@ The experiment validated the Nyquist Sampling Theorem, proving that accurate rec
 ---
 
 <a name="pcm-enc"></a>
-## PCM Encoding
+## 🔢 PCM Encoding
 > *Digitizing signals via sampling, quantization, and binary mapping.*
 
 <details>
@@ -256,7 +256,7 @@ PCM encoding successfully digitizes analog signals, forming the hardware foundat
 ---
 
 <a name="pcm-dec"></a>
-## PCM Decoding
+## 🔡 PCM Decoding
 > *Recovering analog signals from digital binary data.*
 
 <details>
@@ -306,7 +306,7 @@ PCM decoding successfully restores analog information, completing the digital-to
 ---
 
 <a name="bw-limit"></a>
-## Bandwidth Limiting & Restoration
+## 🚫 Bandwidth Limiting & Restoration
 > *Managing Intersymbol Interference (ISI) in restricted channels.*
 
 <details>
